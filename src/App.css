@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+body {
+  font-size: 2rem;
+  height: 100vh;
+  background-color: #ffffff;
+  place-content: center;
+  display: grid;
+}
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  
+}
+.glavni {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+.ekran {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: right;
+  font-size: 4rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: rgb(54, 52, 52);
+  font-weight: bold;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: gray;
+}
+.nol {
+  grid-column: 1 / span 2;
+  border-radius: 25px;
+  padding-left: 2rem;
+  place-content: unset;
+  align-items: center;
+}
+.light-gray {
+  background-color: gray;
+  color: black;
+}
+.light-gray:hover {
+  background-color: white;
+}
+.sariq {
+  background-color: orange;
+}
+.sariq:hover {
+  background-color: white;
+  color: orange;
+}
+
